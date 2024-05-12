@@ -1,0 +1,176 @@
+.add-product {
+  padding: 50px;
+  width: calc(100% - 256px);
+}
+
+.add-product .form-area {
+  padding: 50px;
+  border-radius: 10px;
+  width: 70%;
+  background-color: var(--sidebar-color);
+}
+
+.add-product .form-area h1 {
+  font-size: 20px;
+  color: var(--title-color);
+  margin-bottom: 20px;
+}
+
+.add-product .form-area .product-price-form div {
+  flex: 1 1 0;
+}
+
+.add-product .form-area .form-control {
+  background-color: var(--sidebar-color) !important;
+  border-color: var(--border-color) !important;
+  color: var(--text-color);
+  font-size: 0.9rem;
+}
+
+.add-product .form-area .form-control:focus {
+  box-shadow: none;
+  border: 1px solid #e2365e;
+}
+
+.add-product .form-area .category-dropdown {
+  border: 1px solid var(--border-color);
+  border-radius: 0.375rem;
+  height: 37px;
+  color: var(--text-color);
+}
+
+.add-product .form-area .category-dropdown p {
+  font-size: 0.85rem;
+}
+
+.add-product .form-area .category-dropdown-option {
+  z-index: 1;
+  background-color: var(--sidebar-color);
+  width: 100%;
+  padding: 10px;
+  font-size: 0.9rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.375rem;
+}
+
+.add-product .form-area .category-dropdown-option .option {
+  padding: 5px 8px;
+  color: var(--text-color);
+}
+
+.add-product .form-area .category-dropdown-option .option:hover {
+  background-color: var(--hover-color);
+  border-radius: 5px;
+  color: var(--text-color-light);
+}
+
+.add-product .form-area .image-label {
+  margin-left: 13px;
+  font-size: 0.8rem;
+  color: var(--title-color);
+  position: absolute;
+  top: -10px;
+  padding: 0 5px;
+  background-color: var(--sidebar-color);
+}
+
+.add-product .form-area .form-label {
+  top: 8px;
+  left: 14px;
+  font-size: 0.9rem;
+  color: #b4b4b4;
+  background: transparent;
+  visibility: hidden;
+  transition: all 0.4s ease-in-out;
+}
+
+.add-product .form-area form input:focus::placeholder,
+.add-product .form-area form textarea:focus::placeholder {
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+}
+
+.add-product .form-area form input::placeholder,
+.add-product .form-area form textarea::placeholder {
+  opacity: 1;
+  transition: 0.65s ease-in-out;
+  font-size: 0.9rem;
+  color: #b4b4b4;
+}
+
+.add-product .form-area form input:focus ~ label,
+.add-product .form-area form input.filled ~ label,
+.add-product .form-area form textarea:focus ~ label,
+.add-product .form-area form textarea.filled ~ label {
+  top: -12px;
+  left: 12px;
+  background: var(--sidebar-color);
+  font-size: 0.8rem;
+  color: #e2365e;
+  padding: 0 5px;
+  visibility: visible;
+}
+
+.add-product .form-area .form-label-category {
+  top: 8px;
+  left: 14px;
+  font-size: 0.9rem;
+  color: #b4b4b4;
+  background: transparent;
+  transition: all 0.4s ease-in-out;
+}
+
+.add-product .form-area .category-dropdown:focus .form-label-category,
+.add-product .form-area .category-dropdown.filled .form-label-category {
+  top: -12px;
+  left: 12px;
+  background: var(--sidebar-color);
+  font-size: 0.8rem;
+  color: #e2365e;
+  padding: 0 5px;
+}
+
+.add-product .form-area .add-btn {
+  width: 100%;
+  background-color: var(--sidebar-color);
+  border: 2px solid #e2365e;
+  border-radius: 30px;
+  padding: 5px;
+  font-size: 0.9rem;
+  color: var(--btn-text-color);
+  transition: 0.3s ease-in-out;
+}
+
+.add-product .form-area .add-btn:hover {
+  background-color: var(--btn-hover-color);
+  color: var(--btn-hover-text-color);
+}
+
+@media (max-width: 976px) {
+  .add-product .form-area {
+    width: 80%;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .add-product {
+    padding: 30px;
+  }
+
+  .add-product .form-area {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .add-product {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .add-product .form-area {
+    width: 100%;
+    padding: 20px;
+  }
+}

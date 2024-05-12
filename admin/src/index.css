@@ -1,0 +1,10 @@
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--body-color);
+  height: 100vh;
+}

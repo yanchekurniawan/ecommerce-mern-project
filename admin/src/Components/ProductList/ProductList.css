@@ -1,0 +1,259 @@
+.product-list hr {
+  margin: 5px 0;
+}
+
+.product-list {
+  padding: 50px;
+  width: calc(100% - 256px);
+}
+
+.product-list-area {
+  padding: 50px;
+  background-color: var(--sidebar-color);
+  border-radius: 10px;
+  height: 85vh;
+}
+
+.product-list-area .product-list-format-wrapper {
+  height: 65vh;
+  overflow: auto;
+}
+
+.product-list .product-list-area .grid-format {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1.5fr 2fr 2fr 2fr;
+  gap: 20px;
+}
+
+.product-list .product-list-area .list-grid-format {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr 2fr 1.84fr;
+  gap: 20px;
+}
+
+.product-list .product-list-area .product-list-header p,
+.product-list .product-list-area .product-list-format p {
+  margin-bottom: 0;
+}
+
+.product-list .product-list-area .product-list-format div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-list .product-list-area .product-image img {
+  width: 130px;
+}
+
+.product-list .product-list-area .product-action button {
+  border-radius: 5px;
+  padding: 7px 10px;
+  background-color: var(--sidebar-color);
+}
+
+.product-list .product-list-area .product-action .details {
+  border: 2px solid var(--btn-detail-color);
+  color: var(--btn-detail-color);
+  transition: 0.3s ease-in-out;
+}
+
+.product-list .product-list-area .product-action .details:hover {
+  background-color: var(--btn-detail-color);
+  color: var(--btn-hover-text-color);
+}
+
+.product-list .product-list-area .product-action .edit {
+  border: 2px solid var(--btn-edit-color);
+  color: var(--btn-edit-color);
+  transition: 0.3s ease-in-out;
+}
+
+.product-list .product-list-area .product-action .edit:hover {
+  background-color: var(--btn-edit-color);
+  color: var(--btn-hover-text-color);
+}
+
+.product-list .product-list-area .product-action .delete {
+  border: 2px solid var(--btn-delete-color);
+  color: var(--btn-delete-color);
+  transition: 0.3s ease-in-out;
+}
+
+.product-list .product-list-area .product-action .delete:hover {
+  background-color: var(--btn-delete-color);
+  color: var(--btn-hover-text-color);
+}
+
+.product-list .product-list-area .product-list-header p,
+.product-list .product-list-area .product-list-format-wrapper p {
+  color: var(--text-color);
+}
+
+.modal .modal-title {
+  color: var(--title-color);
+}
+
+.modal .modal-body .product-image-display img {
+  width: 80%;
+}
+
+.modal .modal-body .product-details p {
+  margin: 0;
+}
+
+.modal .modal-body .product-details .label {
+  color: var(--title-color);
+  font-size: 0.8rem;
+}
+
+.modal .modal-body .product-details .value {
+  color: var(--text-color);
+  font-size: 1.1rem;
+}
+
+.modal-content {
+  background-color: var(--sidebar-color);
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.btn-close {
+  color: var(--title-color);
+  opacity: 1;
+}
+
+.modal-body form input {
+  font-size: 0.9rem;
+}
+
+.modal-body form input:focus::placeholder,
+.modal-body form textarea:focus::placeholder {
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+}
+
+.modal-body form input::placeholder,
+.modal-body form textarea::placeholder {
+  opacity: 1;
+  transform: 0.65 ease-in-out;
+  font-size: 0.9rem;
+  color: #b4b4b4;
+}
+
+.modal-body form input:focus ~ label,
+.modal-body form input.filled ~ label,
+.modal-body form textarea:focus ~ label,
+.modal-body form textarea.filled ~ label {
+  top: -12px;
+  left: 12px;
+  background-color: var(--sidebar-color);
+  font-size: 0.8rem;
+  color: var(--title-color);
+  padding: 0 5px;
+  visibility: visible;
+}
+
+.modal-body .category-dropdown {
+  border: 1px solid var(--border-color);
+  border-radius: 0.375rem;
+  height: 37px;
+  color: var(--text-color);
+}
+
+.modal-body .category-dropdown p {
+  font-size: 0.85rem;
+}
+
+.modal-body .category-dropdown-option {
+  z-index: 1;
+  background-color: var(--sidebar-color);
+  width: 100%;
+  padding: 10px;
+  font-size: 0.9rem;
+  border: 1px solid var(--border-color);
+  background-repeat: 0.375rem;
+}
+
+.modal-body .category-dropdown-option .option {
+  padding: 5px 8px;
+  color: var(--text-color);
+}
+
+.modal-body .category-dropdown-option .option:hover {
+  background-color: var(--hover-color);
+  border-radius: 5px;
+  color: var(--text-color-light);
+}
+
+.modal-body .category-dropdown:focus .form-label-category,
+.modal-body .category-dropdown.filled .form-label-category {
+  top: -12px;
+  left: 12px;
+  background-color: var(--sidebar-color);
+  font-size: 0.8rem;
+  color: #e2365e;
+  padding: 0 5px;
+}
+
+.modal-body .change-image-btn {
+  border: 2px solid var(--btn-detail-color);
+  border-radius: 30px;
+  padding: 5px 65px;
+  font-size: 0.9rem;
+  color: var(--btn-detail-color);
+  background-color: var(--sidebar-color);
+  transition: 0.3s ease-in-out;
+}
+
+.modal-body .change-image-btn:hover {
+  background-color: var(--btn-detail-color);
+  color: var(--btn-hover-text-color);
+}
+
+.modal-body .price-wrapper div {
+  flex: 1 1 0;
+}
+
+.modal-body .save-changes button {
+  width: 100%;
+  border: 2px solid #e2365e;
+  border-radius: 30px;
+  padding: 5px;
+  font-size: 0.9rem;
+  color: var(--btn-text-color);
+  background-color: var(--sidebar-color);
+  transition: 0.3s ease-in-out;
+}
+
+.modal-body .save-changes button:hover {
+  background-color: var(--btn-hover-color);
+  color: var(--btn-hover-text-color);
+}
+
+.modal-body .image-label {
+  margin-left: 13px;
+  font-size: 0.8rem;
+  color: var(--title-color);
+  position: absolute;
+  top: -10px;
+  padding: 0 5px;
+  background-color: var(--sidebar-color);
+}
+
+.form-control {
+  background-color: var(--sidebar-color);
+  border-color: var(--border-color);
+  color: var(--text-color);
+  font-size: 0.9rem;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: var(--title-color);
+  background-color: var(--sidebar-color);
+  color: var(--text-color);
+}

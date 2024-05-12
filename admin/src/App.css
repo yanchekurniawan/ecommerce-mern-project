@@ -1,0 +1,41 @@
+.app {
+  height: 100%;
+}
+
+:root {
+  --body-color: #f6f6f6;
+  --primary-color: #e2365e;
+  --secondary-color: #e29736;
+  --tertiary-color: #e2365e;
+  --hover-color: #e2365e;
+  --hover-color-2: #f5577c;
+  --toggle-theme-color: #f6f5ff;
+  --text-color-light: #fff;
+  --sidebar-color: #fff;
+  --text-color: #575757;
+  --border-color: #dee2e6;
+  --title-color: #e2365e;
+  --btn-hover-color: #e2365e;
+  --btn-text-color: #e2365e;
+  --btn-hover-text-color: #fff;
+  --btn-delete-color: #e2365e;
+  --btn-detail-color: #369de2;
+  --btn-edit-color: #e2c836;
+}
+
+body.theme-dark {
+  --body-color: #18191a;
+  --primary-color: #242526;
+  --tertiary-color: #ccc;
+  --hover-color: #3a3b3c;
+  --hover-color-2: #3a3b3c;
+  --text-color-light: #fff;
+  --sidebar-color: #242526;
+  --toggle-theme-color: #3a3b3c;
+  --text-color: #ccc;
+  --border-color: #555758;
+  --title-color: #e2365e;
+  --btn-hover-color: #e2365e;
+  --btn-text-color: #e2365e;
+  --btn-hover-text-color: #e9e9e9;
+}

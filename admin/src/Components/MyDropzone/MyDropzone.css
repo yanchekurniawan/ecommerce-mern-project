@@ -1,0 +1,4 @@
+.dropzone {
+  border-radius: 0.375rem;
+  border-color: var(--border-color);
+}

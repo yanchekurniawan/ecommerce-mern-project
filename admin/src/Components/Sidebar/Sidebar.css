@@ -1,0 +1,364 @@
+body.theme-light,
+body.theme-dark {
+  transition: all 0.3s ease;
+}
+
+.sidebar {
+  background-color: var(--sidebar-color);
+  width: 265px;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+
+.sidebar .separator hr {
+  width: 90%;
+  height: 2px;
+  border: none;
+  background-color: var(--text-color);
+}
+
+.sidebar .toggle-sidebar {
+  top: 50px;
+  left: 250px;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  background-color: var(--hover-color);
+  color: #fff;
+  animation: toggleSidebarAnimation 0.4s;
+}
+
+@keyframes toggleSidebarAnimation {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.sidebar .sidebar-profile {
+  margin-top: 35px;
+  padding: 0 15px;
+}
+
+.sidebar .sidebar-profile .profile .name,
+.sidebar .sidebar-profile .profile .role {
+  animation: profileAnimation 0.4s;
+}
+
+@keyframes profileAnimation {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.sidebar .sidebar-profile img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar .sidebar-profile .profile .name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.sidebar .sidebar-profile .profile .role {
+  font-size: 0.8rem;
+  color: var(--text-color);
+}
+
+.sidebar .wrapper {
+  height: 300px;
+}
+
+.sidebar .sidebar-menu,
+.sidebar .sidebar-option {
+  padding: 0 15px;
+}
+
+.sidebar .sidebar-menu .subtitle,
+.sidebar .sidebar-option .subtitle {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--title-color);
+}
+
+.sidebar .sidebar-menu .menu a {
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  transition: 0.3s ease-in-out;
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+
+.sidebar .sidebar-menu a svg {
+  animation: sidebarMenuSVGAnimation 0.4s;
+}
+
+@keyframes sidebarMenuSVGAnimation {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.sidebar .sidebar-menu .menu a:hover {
+  background-color: var(--hover-color);
+  color: var(--text-color-light);
+}
+
+.sidebar .sidebar-menu .menu a.active {
+  background-color: var(--hover-color);
+  color: var(--text-color-light);
+}
+
+.sidebar .subtitle,
+.sidebar .sidebar-menu .menu p,
+.sidebar .sidebar-option .sun-icon,
+.sidebar .sidebar-option .moon-icon,
+.sidebar .sidebar-option .mode-text {
+  animation: sidebarAnimation 0.4s;
+}
+
+/* Sidebar Close */
+.sidebar.close {
+  width: 80px;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar.close .toggle-sidebar {
+  left: 70px;
+  animation: sidebarAnimation 0.4s;
+}
+
+.sidebar.close .sidebar-profile img {
+  height: 50px;
+  margin-right: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar.close .sidebar-profile .profile .name,
+.sidebar.close .sidebar-profile .profile .role {
+  display: none;
+  opacity: 0;
+  animation: all 0.3s ease-in-out;
+}
+
+.sidebar.close .subtitle,
+.sidebar.close .sidebar-menu .menu p,
+.sidebar.close .sidebar-option .sun-icon,
+.sidebar.close .sidebar-option .moon-icon,
+.sidebar.close .sidebar-option .mode-text {
+  display: none;
+  transition: all 0.3s ease-in-out;
+  animation: siebarAnimation 0.4s;
+}
+
+.sidebar.close .sidebar-menu a svg {
+  margin-right: 0 !important;
+  animation: sidebarAnimation 0.4s;
+}
+
+.sidebar.close .sidebar-option .toggle-switch {
+  right: 5px;
+}
+
+@keyframes sidebarAnimation {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Dark Mode Toggler */
+.sidebar .sidebar-option .toggle-icon .sun-icon,
+.sidebar .sidebar-option .toggle-icon .moon-icon {
+  color: var(--text-color);
+}
+
+.sidebar .sidebar-option .toggle-icon .moon-icon {
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+body.theme-dark .sidebar .sidebar-option .toggle-icon .moon-icon {
+  opacity: 1;
+  transition: 0.3s ease;
+}
+
+body.theme-dark .sidebar .sidebar-option .toggle-icon .sun-icon {
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+.sidebar .sidebar-option .mode-text {
+  color: var(--text-color);
+}
+
+.sidebar .sidebar-option .option {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: var(--toggle-theme-color);
+}
+
+.sidebar .sidebar-option .option p {
+  font-size: 0.85rem;
+  margin-left: 30px;
+}
+
+.sidebar .sidebar-option .toggle-switch {
+  right: 18px;
+}
+
+.sidebar .sidebar-option .toggle-switch .toggle--checkbox {
+  display: none;
+}
+
+.sidebar .sidebar-option .toggle-switch .toggle--label {
+  width: 40px;
+  height: 20px;
+  background-color: #ffb656;
+  border-radius: 25px;
+  border: 2px solid #ffb656;
+  transition: all 0.3s ease;
+}
+
+.sidebar .sidebar-option .toggle-switch .toggle--label:before {
+  animation-name: reverse;
+  animation-duration: 0.35s;
+  animation-fill-mode: forwards;
+  transition: all 0.35s ease-in;
+  content: "";
+  width: 14px;
+  height: 14px;
+  border: 1px solid #f5eb71;
+  top: 50%;
+  left: 2px;
+  transform: translateY(-50%);
+  position: absolute;
+  border-radius: 50%;
+  background: #fffaa8;
+}
+
+@keyframes reverse {
+  0% {
+    left: 20px;
+    width: 14px;
+  }
+  60% {
+    left: 15px;
+    width: 20px;
+  }
+  100% {
+    left: 2px;
+  }
+}
+
+.sidebar
+  .sidebar-option
+  .toggle-switch
+  .toggle--checkbox:checked
+  + .toggle--label {
+  background: #6b7abb;
+  border-color: #5d6baa;
+}
+
+.sidebar
+  .sidebar-option
+  .toggle-switch
+  .toggle--checkbox:checked
+  + .toggle--label:before {
+  background: #fff;
+  border-color: #e8e8ea;
+  animation-name: switch;
+  animation-duration: 350ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes switch {
+  0% {
+    left: 2px;
+  }
+  60% {
+    left: 15px;
+    width: 20px;
+  }
+  100% {
+    left: 20px;
+    width: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .sidebar {
+    width: 60px;
+    height: 95vh;
+  }
+
+  .sidebar .toggle-sidebar {
+    display: none !important;
+  }
+
+  .sidebar .sidebar-profile {
+    padding: 0 5px;
+  }
+
+  .sidebar .sidebar-profile img {
+    height: 50px;
+    margin-right: 0;
+  }
+
+  .sidebar .sidebar-profile .profile .name,
+  .sidebar .sidebar-profile .profile .role {
+    display: none;
+    opacity: 0;
+  }
+
+  .sidebar .subtitle,
+  .sidebar .sidebar-menu .menu p,
+  .sidebar .sidebar-option .sun-icon,
+  .sidebar .sidebar-option .moon-icon,
+  .sidebar .sidebar-option .mode-text {
+    display: none;
+  }
+
+  .sidebar .sidebar-option,
+  .sidebar .wrapper .sidebar-menu {
+    padding: 0 5px;
+  }
+
+  .sidebar .sidebar-menu a svg {
+    margin-right: 0 !important;
+  }
+
+  .sidebar .sidebar-option .toggle-switch {
+    right: 5px;
+  }
+}
