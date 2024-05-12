@@ -1,0 +1,51 @@
+.newsletter .container {
+  background-color: #e2365e;
+  padding: 50px 50px 50px 100px;
+  color: #fff;
+}
+
+@media (max-width: 576px) {
+  .newsletter .container {
+    padding: 50px;
+  }
+}
+
+.newsletter p {
+  padding: 20px 0 10px 0;
+}
+
+.newsletter .form-control:focus {
+  box-shadow: none;
+  border: 1px solid #fff;
+  z-index: 1;
+}
+
+.newsletter .form-control {
+  border-radius: 30px;
+  padding: 10px 20px;
+}
+
+.newsletter button {
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 30px;
+  background-color: #e2365e;
+  z-index: 2;
+}
+
+.newsletter button:hover,
+.newsletter .btn-primary:active {
+  background-color: #fff;
+  border: 2px solid #fff;
+  color: #e2365e;
+}
+
+.newsletter
+  .input-group
+  > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(
+    .valid-feedback
+  ):not(.invalid-tooltip):not(.invalid-feedback) {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  margin-left: -20px;
+}

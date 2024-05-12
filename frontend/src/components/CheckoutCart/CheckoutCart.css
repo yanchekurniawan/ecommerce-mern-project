@@ -1,0 +1,225 @@
+.checkout-cart {
+  background-color: #f0f3f7;
+  color: rgb(33, 33, 33);
+}
+
+.checkout-cart p {
+  margin-bottom: 0;
+}
+
+.checkout-cart .container {
+  margin-top: 80px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.checkout-cart .buyer-address {
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+
+.checkout-cart .buyer-address {
+  line-height: 23px;
+}
+
+.checkout-cart .buyer-address .title {
+  font-weight: 700;
+  color: rgb(109, 117, 136);
+  font-size: 15px;
+}
+
+.checkout-cart .buyer-address .name {
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.checkout-cart .buyer-address .address {
+  font-size: 0.875rem;
+}
+
+.checkout-cart .buyer-address .change-btn {
+  font-size: 0.75rem;
+  border: 2px solid #e2365e;
+  color: #e2365e;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 20px;
+  transition: 0.3s ease-in-out;
+}
+
+.checkout-cart .buyer-address .change-btn:hover {
+  background-color: #e2365e;
+  color: #fff;
+}
+
+.items-list {
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+
+.items-list .item-list-title {
+  font-weight: 700;
+  color: #6d7588;
+  font-size: 15px;
+}
+
+.items-list .item-image-icon {
+  width: 100px;
+}
+
+.items-list .item-list-description {
+  width: 100%;
+}
+
+.items-list .item-qty-price {
+  font-weight: 700;
+}
+
+.items-list .item-size {
+  color: #6d7588;
+  font-size: 14px;
+}
+
+.delivery,
+.cart-summary {
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+
+.delivery .delivery-title,
+.cart-summary .cart-summary-title {
+  color: #6d7588;
+  font-weight: 700;
+}
+
+.delivery .dropdown {
+  width: 100%;
+  position: relative;
+}
+
+.delivery .dropdown .dropdown-btn {
+  padding: 8px 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 1px solid #afafaf;
+  font-size: 0.8rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.delivery .dropdown .dropdown-content {
+  position: absolute;
+  top: 110%;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #afafaf;
+  border-radius: 10px;
+  color: #333;
+  width: 100%;
+  z-index: 1;
+}
+
+.delivery .dropdown .dropdown-content .dropdown-item div p:nth-child(1) {
+  flex: 1;
+}
+
+.delivery .dropdown .dropdown-content .dropdown-item {
+  padding: 5px 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.delivery .dropdown .dropdown-content .dropdown-item:hover {
+  background-color: #e2365e;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.promo-code .form-control:focus {
+  box-shadow: none;
+  border: 1px solid #e2365e;
+  z-index: 1;
+}
+
+.promo-code .form-control {
+  border-radius: 30px;
+  padding: 10px 20px;
+  border: 1px solid #e2365e;
+  height: 40px;
+}
+
+.promo-code button {
+  height: 40px;
+  padding: 0 20px;
+  border: 2px solid #e2365e;
+  color: #fff;
+  border-radius: 30px;
+  background-color: #e2365e;
+  z-index: 2;
+}
+
+.promo-code button:hover,
+.promo-code .btn-primary:active {
+  background-color: #e2365e;
+  border: 2px solid #e2365e;
+  color: #fff;
+}
+
+.promo-code
+  .input-group
+  > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(
+    .valid-feedback
+  ):not(.invalid-tooltip):not(.invalid-feedback) {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  margin-left: -20px;
+}
+
+.cart-summary .payment-method button {
+  border: 2px solid #e2365e;
+  background-color: #fff;
+  color: #e2365e;
+  border-radius: 30px;
+  padding: 7px 20px;
+  width: 100%;
+  transition: 0.3s ease-in-out;
+  font-weight: 500;
+}
+
+.cart-summary .payment-method button:hover {
+  background-color: #e2365e;
+  color: #fff;
+}
+
+@media (max-width: 992px) {
+  /* Cart Items */
+  .items-list .item-name,
+  .items-list .item-qty-price {
+    font-size: 14px;
+  }
+
+  /* Cart Summary */
+  .cart-summary .summary p,
+  .cart-summary .delivery-total p,
+  .cart-summary .cart-total p {
+    font-size: 14px;
+  }
+
+  .promo-code .form-control {
+    font-size: 14px;
+    height: 30px;
+  }
+
+  .promo-code button {
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .cart-summary .payment-method button {
+    font-size: 14px;
+    padding: 5px 0;
+  }
+}

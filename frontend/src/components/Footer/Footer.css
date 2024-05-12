@@ -1,0 +1,38 @@
+.footer {
+  margin-top: 100px;
+}
+
+@media (max-width: 576px) {
+  .footer {
+    margin-top: 70px;
+  }
+
+  .footer .container {
+    padding: 0 30px 0 30px;
+  }
+
+  .footer .footer-link ul:nth-child(1) {
+    padding-left: 0;
+  }
+
+  .footer .footer-link ul:not(:nth-child(1)) {
+    padding-left: 10px;
+  }
+}
+
+.footer .footer-brand img {
+  width: 7%;
+}
+
+.footer .footer-brand h1 {
+  font-size: 35px;
+  font-weight: 700;
+  color: #5f5f5f;
+}
+
+.footer .footer-link ul,
+.footer .footer-social ul {
+  list-style: none;
+  color: #5f5f5f;
+  cursor: pointer;
+}

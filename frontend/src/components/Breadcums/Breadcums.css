@@ -1,0 +1,22 @@
+.breadcums {
+  padding-top: 110px;
+  font-size: 15px;
+}
+
+@media (max-width: 992px) {
+  .breadcums {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .breadcums {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 576px) {
+  .breadcums {
+    font-size: 12px;
+  }
+}

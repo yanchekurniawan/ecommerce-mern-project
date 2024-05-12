@@ -1,0 +1,24 @@
+.related-products h1 {
+  color: #e2365e;
+}
+
+.related-products .the-products .container {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.related-products .the-products .container .item {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .related-products .the-products .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .related-products h1 {
+    margin-left: 15px;
+  }
+}

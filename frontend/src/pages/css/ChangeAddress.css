@@ -1,0 +1,63 @@
+.change-address {
+  padding: 110px 0 30px 0;
+  background-color: #f0f3f7;
+  color: rgb(33, 33, 33);
+}
+
+.change-address .container h3 {
+  color: #e2365e;
+  font-weight: 500;
+}
+
+.change-address .container {
+  text-align: start;
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 10px;
+  width: 50%;
+}
+
+.form-select:focus,
+.react-tel-input .form-control:focus {
+  border-color: #e2365e !important;
+  box-shadow: none !important;
+}
+
+.react-tel-input .form-control {
+  height: 39px !important;
+  width: 100% !important;
+  border-color: #dee2e6 !important;
+}
+
+.react-tel-input .special-label {
+  display: none !important;
+}
+
+.save-change-btn button {
+  border: 2px solid #e2365e;
+  width: 100%;
+  text-align: center;
+  border-radius: 30px;
+  padding: 5px 0;
+  color: #e2365e;
+  font-weight: 500;
+  margin-top: 15px;
+  transition: 0.3s ease-in-out;
+}
+
+.save-change-btn button:hover {
+  background-color: #e2365e;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .change-address .container {
+    width: 70%;
+  }
+}
+
+@media (max-width: 576px) {
+  .change-address .container {
+    width: 90%;
+  }
+}

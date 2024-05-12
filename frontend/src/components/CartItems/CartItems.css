@@ -1,0 +1,222 @@
+.cart-items .container-fluid {
+  margin-top: 110px;
+  padding: 0 116px;
+}
+
+.cart-items p {
+  margin-bottom: 0;
+}
+
+.cart-items .cart-items-format {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 75px;
+  padding: 20px 0;
+  color: #454545;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.cart-items .cart-items-body .product-icons {
+  height: 62px;
+  width: auto;
+}
+
+.cart-items .cart-items-body .product-quantity button {
+  width: 25px;
+  height: 25px;
+  background-color: #e2365e;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 2px;
+}
+
+.cart-total .total p {
+  font-size: 17px;
+}
+
+.cart-total .total .total-value {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.cart-total .checkout button {
+  border: 2px solid #e2365e;
+  border-radius: 30px;
+  padding: 10px 30px;
+  color: #e2365e;
+  transition: 0.3s ease-in-out;
+}
+
+.cart-total .checkout button:hover {
+  background-color: #e2365e;
+  color: #fff;
+}
+
+@media (max-width: 1280px) {
+  .cart-items .container-fluid {
+    padding: 0 100px;
+  }
+
+  .cart-items .cart-items-format {
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 0.5fr;
+    gap: 20px;
+    padding: 15px 0;
+    font-size: 15px;
+  }
+
+  .cart-items .cart-items-body .product-quantity button {
+    width: 23px;
+    height: 23px;
+    font-size: 15px;
+  }
+
+  .cart-total .total p {
+    font-size: 15px;
+  }
+
+  .cart-total .total .total-value {
+    font-size: 23px;
+  }
+
+  .cart-total .checkout button {
+    font-size: 15px;
+    padding: 8px 25px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .cart-items .cart-items-body .cart-items-format p {
+    font-size: 14px;
+  }
+
+  .cart-items .cart-items-body .product-quantity button {
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+  }
+
+  .cart-items .cart-items-body .product-quantity .minus {
+    margin-right: 10px !important;
+  }
+
+  .cart-items .cart-items-body .product-quantity .plus {
+    margin-left: 10px !important;
+  }
+
+  .cart-total .total p {
+    font-size: 14px;
+  }
+
+  .cart-total .total .total-value {
+    font-size: 21px;
+  }
+
+  .cart-total .checkout button {
+    font-size: 14px;
+    padding: 7px 25px;
+  }
+}
+
+@media (max-width: 992px) {
+  .cart-items .container-fluid {
+    padding: 0 30px;
+  }
+
+  .cart-items .cart-items-format {
+    gap: 10px;
+    font-size: 14px;
+  }
+
+  .cart-items .cart-items-body .cart-items-format svg {
+    width: 18px !important;
+  }
+
+  .cart-items .cart-items-body .product-icons {
+    height: 55px;
+    width: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .cart-items .cart-items-format {
+    font-size: 12px;
+    padding: 10px 0;
+  }
+
+  .cart-items .cart-items-body .cart-items-format p {
+    font-size: 12px;
+  }
+
+  .cart-items .cart-items-body .cart-items-format svg {
+    width: 15px !important;
+  }
+
+  .cart-items .cart-items-body .product-icons {
+    height: 40px;
+    width: auto;
+  }
+
+  .cart-total .total p {
+    font-size: 12px;
+  }
+
+  .cart-total .total .total-value {
+    font-size: 18px;
+  }
+
+  .cart-total .checkout button {
+    font-size: 12px;
+    padding: 7px 23px;
+  }
+}
+
+@media (max-width: 576px) {
+  .cart-items .container-fluid {
+    padding: 0 5px;
+  }
+
+  .cart-items .cart-items-body .product-icons {
+    height: 50px;
+    width: auto;
+  }
+
+  .cart-items .cart-items-format {
+    grid-template-columns: 1fr 1fr 1fr 0.8fr 1.2fr 0.8fr;
+    padding: 0;
+    font-size: 10px;
+  }
+
+  .cart-items .cart-items-body .cart-items-format p {
+    font-size: 10px;
+  }
+
+  .cart-items .cart-items-body .product-quantity {
+    flex-direction: column-reverse;
+  }
+
+  .cart-items .cart-items-body .product-quantity button {
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+  }
+
+  .cart-items .cart-items-body .product-quantity .minus,
+  .cart-items .cart-items-body .product-quantity .plus {
+    margin: 3px 0 !important;
+  }
+
+  .cart-total .total p {
+    font-size: 10px;
+  }
+
+  .cart-total .total .total-value {
+    font-size: 15px;
+  }
+
+  .cart-total .checkout button {
+    font-size: 10px;
+    padding: 5px 18px;
+  }
+}

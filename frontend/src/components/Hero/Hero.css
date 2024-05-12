@@ -1,0 +1,130 @@
+.hero {
+  height: 100vh;
+  /* background-color: #fb8b00; */
+  background-image: url("../../assets/img/hero-bg-2.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+}
+
+.hero .container {
+  margin-top: 50px;
+}
+
+.hero .hero-left {
+  flex: 1;
+  line-height: 1.1;
+  gap: 20px;
+}
+
+.hero .hero-left h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+
+.hero .hero-left p {
+  font-size: 70px;
+  font-weight: 700;
+  text-align: start;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  line-height: 1.1;
+}
+
+.hero .hero-left button {
+  margin-top: 10px;
+  padding: 10px 25px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+  font-weight: 500;
+}
+
+.hero .hero-left button:hover {
+  color: #e2365e;
+  background: #fff;
+}
+
+.hero .hero-right img {
+  padding-top: 100px;
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .hero .hero-left h2 {
+    font-size: 20px;
+  }
+
+  .hero .hero-left p {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero .hero-left h2 {
+    font-size: 18px;
+  }
+
+  .hero .hero-left p {
+    font-size: 40px;
+  }
+
+  .hero .hero-left .latest-collection-btn button {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+
+  .hero .hero-left .latest-collection-btn button svg {
+    width: 20px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 100vh;
+  }
+
+  .hero .hero-left {
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 50px;
+  }
+
+  .hero .hero-left h2 {
+    font-size: 20px;
+  }
+
+  .hero .hero-left p {
+    font-size: 60px;
+    text-align: center;
+  }
+
+  .hero img {
+    display: none !important;
+  }
+
+  .hero .latest-collection-btn button {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+
+  .hero .latest-collection-btn button svg {
+    width: 20px !important;
+    margin-left: 5px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero .hero-left h2 {
+    font-size: 18px;
+  }
+
+  .hero .hero-left p {
+    font-size: 40px;
+    text-align: center;
+  }
+}

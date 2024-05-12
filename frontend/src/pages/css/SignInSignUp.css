@@ -1,0 +1,138 @@
+.sign-in-sign-up .container {
+  padding-top: 150px;
+  height: 98vh;
+}
+
+.sign-in-sign-up .sign-in-banner {
+  background-color: #e2365e;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 0 50px;
+  color: #fff;
+}
+
+.sign-in-sign-up .sign-in-form {
+  padding: 0;
+}
+
+.sign-in-sign-up .sign-in-form .sign-in {
+  border: 2px solid #e2365e;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 100%;
+  padding: 50px 80px;
+  background-color: #fff;
+}
+
+.sign-in-sign-up .sign-in-banner h3 {
+  font-weight: 700;
+  font-size: 35px;
+  letter-spacing: 1px;
+}
+
+.sign-in-sign-up .sign-in h2 {
+  color: #e2365e;
+  font-weight: 700;
+}
+
+.sign-in-sign-up form .form-group {
+  position: relative;
+}
+
+.sign-in-sign-up form input.form-control {
+  font-size: 0.9rem;
+}
+
+.sign-in-sign-up form input.form-control ~ label {
+  position: absolute;
+  top: 7px;
+  left: 14px;
+  color: #b4b4b4;
+  background: transparent;
+  transition: 0.3s ease-in-out;
+}
+
+.sign-in-sign-up form input:focus ~ label,
+.sign-in-sign-up form input.filled ~ label {
+  top: -12px;
+  left: 13px;
+  background: #fff;
+  padding: 0 5px;
+  font-size: 0.8rem;
+  color: #e2365e;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #e2365e;
+}
+
+.sign-in-sign-up .sign-in-btn {
+  width: 100%;
+  padding: 5px 0;
+  border: 2px solid #e2365e;
+  border-radius: 20px;
+  color: #e2365e;
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+}
+
+.sign-in-sign-up .sign-in-btn:hover {
+  background-color: #e2365e;
+  color: #fff;
+}
+
+.sign-in-sign-up .create-account,
+.sign-in-sign-up .login-account {
+  font-size: 0.8rem;
+  letter-spacing: 0.4px;
+  color: #969696;
+}
+
+.sign-in-sign-up .create-account span,
+.sign-in-sign-up .login-account span {
+  color: #e2365e;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.sign-in-sign-up .errors {
+  text-align: start;
+  font-size: 0.7rem;
+  color: red;
+}
+
+@media (max-width: 576px) {
+  .sign-in-sign-up .sign-in-banner {
+    display: none !important;
+  }
+
+  .sign-in-sign-up .sign-in-form {
+    padding: 0 30px;
+  }
+
+  .sign-in-sign-up .sign-in-form .sign-in {
+    border-radius: 10px;
+    padding: 80px 40px;
+  }
+
+  .sign-in-sign-up .sign-in-btn {
+    font-size: 14px;
+  }
+
+  .sign-in-sign-up form input.form-control ~ label {
+    font-size: 14px;
+  }
+
+  .sign-in-sign-up form input:focus ~ label,
+  .sign-in-sign-up form input.filled ~ label {
+    top: -7px;
+    font-size: 0.6rem;
+  }
+
+  .sign-in-sign-up .create-account {
+    font-size: 0.7rem;
+    letter-spacing: 0.4px;
+    color: #969696;
+  }
+}
